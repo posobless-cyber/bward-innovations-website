@@ -1,48 +1,19 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — BWARD Innovations</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="index.html">BWARD Innovations</a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+<form action="https://formsubmit.co/posobless@gmail.com" method="POST">
 
-  <main class="container content">
-    <h1>Contact</h1>
-    <p>Want to work together? Send an email or use the form below.</p>
+    <!-- Protect from spam -->
+    <input type="hidden" name="_captcha" value="false">
 
-    <form id="contactForm" action="mailto:hello@example.com" method="POST" enctype="text/plain">
-      <label for="name">Your name</label>
-      <input id="name" name="name" type="text" placeholder="Your name" required>
+    <!-- Redirect to thank-you page or home after sending -->
+    <input type="hidden" name="_next" value="https://posobless-cyber.github.io/bward-innovations-website/">
 
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email" placeholder="you@example.com" required>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
 
-      <button type="submit" class="btn">Send email</button>
-    </form>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
 
-    <p class="note">Please contact <code>posobless@gmail.com</code> address in the form's <code>action</code> with your real email to receive messages.</p>
-  </main>
-
-  <footer class="site-footer container">
-    <p>&copy; 2025 BWARD Innovations.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    <button type="submit">Send Message</button>
+</form>
